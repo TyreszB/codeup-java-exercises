@@ -14,9 +14,9 @@ public class ConsoleExercises {
 //        String userInput1 = scanner.next();
 //        String userInput2 = scanner.next();
 //        String userInput3 = scanner.next();
-//        System.out.printf(userInput1);
-//        System.out.printf(userInput2);
-//        System.out.printf(userInput3);
+//        System.out.println(userInput1);
+//        System.out.println(userInput2);
+//        System.out.println(userInput3);
 
 //        System.out.print("Enter a sentence: ");
 //        String sentInput = scanner.nextLine();
