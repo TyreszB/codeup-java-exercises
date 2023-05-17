@@ -4,7 +4,7 @@ public class ControlFlowExercises {
     public static void main(String[] args) {
 //        int i = 5;
 //        while(i <= 15){
-//            System.out.printf("current number is: %d %n", i);
+//            System.out.print(i + " ");
 //            i++;
 //        }
 //        long i = 2;
@@ -13,12 +13,12 @@ public class ControlFlowExercises {
 //            i = i *= i;
 //        }while (i < 1000000);
 //        for(int i = 5; i <= 15; i++){
-//            System.out.printf("current number is %d %n", i);
+//            System.out.print(i + " ");
 //        }
 //        for(long i = 2; i < 1000000; i*=i){
 //            System.out.println(i);
 //        }
-//        for(int i = 0; i < 100; i++){
+//        for(int i = 1; i < 100; i++){
 //            if(i % 5 == 0 && i % 3 == 0){
 //                System.out.println("FizzBuzz");
 //            } else if (i % 5 == 0) {
@@ -38,9 +38,8 @@ public class ControlFlowExercises {
 //            System.out.println("number | squared | cubed");
 //            System.out.println("------ | ------- | -----");
 //            for (int i = 1; i <= num; i++) {
-//                System.out.printf("%d      |", i);
-//                System.out.printf(" %d       |", i * i);
-//                System.out.printf(" %d     %n", i * i * i);
+//                System.out.printf("%-7s| %-9s| %-6s%n", i, i*i, i*i*i);
+//
 //
 //            }
 //            System.out.println("Would you like to continue? [y/n]");
