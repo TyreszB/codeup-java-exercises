@@ -2,9 +2,7 @@ import java.util.Random;
 
 public class SeverNameGenerator {
     public static String getRandomElement(String[] array) {
-        Random random = new Random();
-        int index = random.nextInt(array.length);
-        return array[index];
+       return array[(int)Math.floor(Math.random() * (array.length-1))];
     }
 
     public static void main(String[] args) {
