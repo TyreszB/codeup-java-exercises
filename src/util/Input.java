@@ -38,8 +38,14 @@ public class Input extends Exception {
     public int getInt(){
         this.sc = new Scanner(System.in);
         System.out.println("Give me an integer: ");
-        int num = sc.nextInt();
-        return num;
+        try {
+            String input = getString();
+            int num = Integer.valueOf(input);
+            return num;
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input. Please enter a valid integer.");
+        }
+        return getInt();
     }
 
     public double getDouble(double min, double max){
@@ -60,8 +66,14 @@ public class Input extends Exception {
     public double getDouble(){
         this.sc = new Scanner(System.in);
         System.out.println("Give me a double: ");
-        double num = sc.nextDouble();
-        return num;
+        try {
+            String input = getString();
+            double num = Double.valueOf(input);
+            return num;
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input. Please enter a valid double.");
+        }
+        return getDouble();
     }
     public int getBinary() {
         this.sc = new Scanner(System.in);
