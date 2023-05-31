@@ -42,18 +42,14 @@ public class GradesApplication {
 
 
         while (awnser.equalsIgnoreCase("y") || awnser.equalsIgnoreCase("yes")) {
-            AtomicBoolean invalidUser = new AtomicBoolean(true);
             System.out.printf("%nWhat student would you like to see more information on?%n");
             String personUsername = sc.next();
-            students.forEach((key, value) -> {
-                if (value.equalsIgnoreCase(personUsername)) {
-                    System.out.printf("Name: %s - Github Username: %s%n Current Average: %2.2f", key.getName(), value, key.getGradeAverage());
-                    invalidUser.set(false);
+            {
+                if (students.containsKey(personUsername)) {
+                    System.out.printf("Name: %s - Github Username: %s%n Current Average: %2.2f", students.get(personUsername), personUsername, students.get(personUsername));
+                } else {
+                    System.out.println("invalid");
                 }
-            });
-            if (invalidUser.get()) {
-                System.out.println("invalid");
-            }
             System.out.printf("%nWould you like to see another student?%n");
             awnser = sc.next();
         }
@@ -63,4 +59,5 @@ public class GradesApplication {
     }
 
 
+}
 }
